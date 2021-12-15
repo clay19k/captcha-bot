@@ -1,18 +1,37 @@
-# Discord-CaptchaBot
-A discord verification captcha bot with images involved! This bot was created with discord.js v12 and captcha-canvas
+# captcha-bot
+A ilgili resimlerle uyumsuzluk doğrulama captcha botu! Bu bot discord.js v12 ve captcha-canvas ile oluşturuldu
 
-# ✨ Setting Up
+# ✨ Kurulum!
 - [x] ```npm init```
 - [x] ```npm i ```
-- [x] **Fill out the stuff in the top and bottom of index.js**
 
-# ✅ Discord Captcha Bot
-A discord bot that verifies you into the server!
+# ✅ Discord Captcha Bot!
+Sizi sunucuya doğrulayan bir discord botu!
 
-# ⌨️ Commands
-| Commands  | Description |
+# ⌨️ Komutlar!
+| Komutlar  | Açıklamada |
 | ------------- | ------------- |
-| $verify | Brings up an embed with images on verification |
+| .verify | Yazdığınızda Doğrulama Çıkacaktır Onu Girdiğinizde Perm Verir. |
 
-- [Dark Codes](https://discord.gg/devs/)
+# 📖 Bilgi!
+| Size altayapı ile ilgili biraz bilgi vereyim .verify yazdığınızda 1 dakika
+| içinde doğrulanmaz ise sunucudan user kicklenir ve dm den 
+
+`Doğrulamada Başarısız Oldunuz!
+Doğrulamada başarısız oldunuz null clay 
+kullanıcısının sunucusu! Tekrar denemek isterseniz, 
+tekrar katılmak için lütfen burayı tıklayın!`
+
+diye bir mesaj atar ve altında sunucu linki olur ve üye tekrar sunucuya giriş yapabilir
+kodları biraz inceler iseniz orda `member.user.kick()` göreceksiniz ve bunu değiştirebilirsiniz
+
+# ↓ RESİMLER ↓
+
+<img src=https://media.discordapp.net/attachments/920735288081403975/920783304851066910/unknown.png>
+
+
+<img src=https://media.discordapp.net/attachments/920706957034274860/920783651741003836/unknown.png>
+
+
+- [Discord](https://discord.gg/GKgWbcRhfv)
 
