@@ -138,4 +138,4 @@ otomatik kullanıcı hesaplarını kullanarak hedefli saldırılar.
 
 
 
-client.login('OTE5Mzk5MTQzMDg3MTY5NTM2.YbVPLQ.MBP6_vLCymx7Dp4NDlPnhudRVUE')
+client.login('BURAYA_TOKENİNİZ')
