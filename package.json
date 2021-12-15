@@ -1,0 +1,15 @@
+{
+  "name": "clay-captcha-bot",
+  "version": "1.0.0",
+  "description": "Clây#0082",
+  "main": "index.js",
+  "scripts": {
+    "test": "CU"
+  },
+  "author": "BU ALTYAPI CLAY AİTTİR",
+  "license": "ISC",
+  "dependencies": {
+    "captcha-canvas": "^2.3.1",
+    "discord.js": "^12.5.3"
+  }
+}
