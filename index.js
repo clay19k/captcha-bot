@@ -136,6 +136,32 @@ otomatik kullanıcı hesaplarını kullanarak hedefli saldırılar.
 
 })
 
+///Giriş Çıkış Log
+client.on("guildMemberAdd", (member) => {
+    member.guild.channels.cache
+   .get("SUNUCUYAGİRİŞ_lOG")
+   .send(`Sunucuya! ${member} Katıldı *${member.guild.memberCount}* Kişiyiz.
+  
+Hesabın Oluşturulma Tarihi: ${moment(member.user.createdAt).format("`YYYY DD MMMM dddd (hh:mm:ss)`")}`)});;
 
+client.on("guildMemberRemove", (member) => {
+    member.guild.channels.cache
+   .get("ÇIKIŞ_LOG")
+   .send(`${member} Sunucudan Ayrıldı Artık ${member.guild.memberCount} Kişiyiz.`)});;
+//Giriş Çıkış Bitiş
+
+//BBot Ses & Ses Mute
+client.on('ready', () => {
+    client.channels.cache.get('BOTUN_GİRECEĞİ_SES').join()
+  });
+  
+  //---------------------------SELFDEAF & SELFMUTE
+  client.on('voiceStateUpdate', async (___, newState) => {
+    //---SELFDEAF
+    if(
+        newState.member.user.bot &&
+        newState.channelID &&
+        newState.member.user.id == client.user.id && !newState.selfDeaf
+    ) return newState.setSelfDeaf(true);})
 
 client.login('BURAYA_TOKENİNİZ')
